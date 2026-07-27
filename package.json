@@ -1,0 +1,23 @@
+{
+  "name": "gesture-ai-reycloud",
+  "version": "1.0.0",
+  "description": "AI Gesture Recognition + Voice Assistant",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "mediapipe",
+    "gesture",
+    "ai",
+    "voice",
+    "reycloud"
+  ],
+  "author": "ReyCloud",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
