@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>ReyCloud AI Gesture</title>
+
+<link rel="stylesheet"
+href="style.css">
+
+</head>
+
+<body>
+
+<div id="loading">
+
+<div class="loader"></div>
+
+<h2>Gesture Hand Ai</h2>
+
+<p>Memuat Artificial Intelligence...</p>
+
+</div>
+
+<div id="app">
+
+<header>
+
+<h1>🤖 ReyCloud AI</h1>
+
+<p>Gesture Recognition + Voice Assistant</p>
+
+</header>
+
+<div class="camera">
+
+<video
+id="video"
+autoplay
+playsinline
+muted></video>
+
+<canvas id="canvas"></canvas>
+
+<div class="camera-status">
+
+<span id="cameraDot"></span>
+
+<span id="cameraText">
+
+Menghubungkan Kamera...
+
+</span>
+
+</div>
+
+</div>
+
+<div class="info">
+
+<div class="card">
+
+<h3>Gesture</h3>
+
+<p id="gesture">
+
+Belum terdeteksi
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Confidence</h3>
+
+<p id="score">
+
+0%
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>AI Voice</h3>
+
+<p id="voice">
+
+Menunggu Gesture...
+
+</p>
+
+</div>
+
+</div>
+
+<div id="subtitle">
+
+Halo 👋
+
+</div>
+
+<footer>
+
+Made with ❤️ By ReyCloud
+
+</footer>
+
+</div>
+
+<script type="module">
+
+import {
+
+FilesetResolver,
+
+GestureRecognizer
+
+}
+
+from
+
+"https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@latest";
+
+window.FilesetResolver =
+FilesetResolver;
+
+window.GestureRecognizer =
+GestureRecognizer;
+
+</script>
+
+<script src="ai.js"></script>
+
+<script type="module"
+src="script.js"></script>
+
+</body>
+
+</html>
